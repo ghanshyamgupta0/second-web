@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .page{
+            justify-content: center;
+        }
+     
+        ul{
+            list-style-type: none;
+            padding: 0%;
+            margin: 0;
+            overflow: hidden;
+            background-color: #4c2727;
+
+        }
+        li{
+            float: left;
+
+        }
+        li a{
+            display: block;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+        }
+        li a:hover:not(.last){
+            background-color: #111;
+        }
+        .last{
+            background-color: green;
+            }
+        .container{
+            justify-content: center;
+            background-color: white;
+            
+        }
+        .img1{
+            align-items: center;
+            border-radius: px;
+            height: 160px;
+            width: 800px;
+            background-color:lightgray;
+            padding: 50px;
+            justify-content: center;
+            margin-left: 300px;
+
+        }
+        .disr{
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            align-content: 90px;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        .title{
+            text-align: center;
+            font-size: 20px;
+            color: #111;
+        }
+        .les{
+            font-size: 30px;
+        }
+        .les1{
+            margin-bottom: 200px;
+            margin-left: 10px;
+
+        }
+        .les2{
+            margin-bottom: 400px;
+            margin-right: 10px;
+        }
+        .second:not(.title2){
+            float: left;
+            display: flex;
+            padding:10px ;
+            margin-left: 290px;
+            
+        }
+        .img{
+            margin-right: 30px;
+            float: left;
+            width: 190px;
+        }
+        .img2{
+            background-color: lightgray;
+            justify-content: left;
+            width: 202px;
+            height: 120px;
+        }
+        .img3{
+            background-color: lightgray;
+            height: 120px;
+            width: 202px;
+        }
+        .img4{
+            background-color: lightgray;
+            justify-content: left;
+            height: 120px;
+            width: 202px;
+        }
+        .img5{
+            background-color: lightgray;
+            height: 120px;       
+            width: 202px;
+        }
+
+        .title2{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-top: 140px;
+            margin-left: 120px; 
+        } 
+        .third{
+            float: left;
+            display: flex;
+            padding:10px ;
+            margin-left: 290px;
+        }
+        
+        .card{
+            margin-right: 30px;
+            float: left;
+            width: 190px;
+        }
+        .img6{
+            background-color: lightgray;
+            width: 202px;
+            height: 120px;
+        }
+        .img7{
+            background-color: lightgray;
+            height: 120px;
+            width: 202px;
+        }
+        .img8{
+            background-color: lightgray;
+            justify-content: left;
+            height: 120px;
+            width: 202px;
+        }
+        .img9{
+            background-color: lightgray;
+            height: 120px;       
+            width: 202px;
+        }
+        .fourth:not(.net){
+            float: left;
+            display: flex;
+            padding:50px ;
+            margin-left: 310px;
+        }
+        
+        .circle{
+            margin-right: 140px;
+            float: left;
+            width: 190px;
+            border-radius: 90%;
+        }
+        .img10{
+            background-color: lightgray;
+            /* justify-content: left; */
+            width: 150px;
+            height: 150px;
+        }
+        .img11{
+            background-color: lightgray;
+            height: 150px;
+            width: 150px;
+        }
+        .img12{
+            background-color: lightgray;
+            justify-content: left;
+            height: 150px;
+            width: 150px;
+        }
+        .fifth{
+            float: left;
+            display: flex;
+            padding:50px ;
+            margin-left: 310px;
+        }
+        
+        .circle2{
+            margin-right: 140px;
+            float: left;
+            width: 190px;
+            border-radius: 90%;
+        }
+        .img13{
+            background-color: lightgray;
+            /* justify-content: left; */
+            width: 150px;
+            height: 150px;
+        }
+        .img14{
+            background-color: lightgray;
+            height: 150px;
+            width: 150px;
+        }
+        .img15{
+            background-color: lightgray;
+            justify-content: left;
+            height: 150px;
+            width: 150px;
+        }
+        .sixth:not(explain){
+            display: flex;
+            float: left;
+            padding: 10px;
+            margin-left: 290px;
+            margin-top: 100px;
+        }
+        .rec{
+            float: left;
+            width: 190px;
+            margin-right: 30px;
+        }
+        .img16{
+            background-color: lightgray;
+            width: 202px;
+            height: 150px;
+        }
+        .img17{
+            background-color: lightgray;
+            width: 202px;
+            height: 150px;
+        }
+        .img18{
+            background-color: lightgray;
+            width: 202px;
+            height: 150px;
+        }
+        .img19{
+            background-color: lightgray;
+            width: 202px;
+            height: 150px;
+        }
+        .seventh:not(end){
+            display: flex;
+            float: left;
+            padding: 10px;
+            margin-left: 292px;
+            margin-top: 150px;
+        }
+        .rec2{
+            margin-right: 30px;
+            width: 70px;
+        }
+        .img20{
+            background-color: lightgray;
+            width: 435px;
+            height: 150px;
+        }
+        .img21{
+            background-color: lightgray;
+            width: 435px;
+            height: 150px;
+        }
+        .next{
+            font-size: 20px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 750px; 
+        }
+        .ans{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+        .ans1{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 125px; 
+        }
+        .net{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 170px;
+            margin-left: 70px;
+            margin-bottom: -50px;
+            padding: 10px;
+        }
+        .btn{
+            margin-top:  160px;
+            font-size: 15px;
+            height: 8px;
+            width: 100%;
+            padding: 10px;
+        }
+        .explain{
+            font-size: 40px;
+            margin-top: 600px;
+            margin-left: 650px;
+            padding: -10;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -100px;
+        }
+        .hr{
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            padding: o;
+            margin-top: 480px;
+            margin-left: 700px;
+            margin-bottom: -150px;
+        }
+        .value{
+            margin-top: 150px;
+        }
+        .value2{
+            margin-top: -10px;
+        }
+        .end{
+            display:flex;
+            background: gray;
+            margin-top: 400px;
+            height: 140px;
+            width: 100%;
+        } 
+        .eight{
+            float: right;
+            height: 90px;
+            width: 180px;
+            margin: 15px;
+            background-color: lightgray;
+            margin-left: 575px;
+        }
+        .clb{
+            font-size: 35px;
+            margin-left: 350px;
+            margin-top: 80px;
+        }
+       .head{
+        margin-top: 50px;
+        padding: 4 0px;
+        margin-left: 280px;
+       }
+       button{
+        width: 150px;
+        background-color: aliceblue;
+        padding: 15px;
+       }
+       .hd{
+        margin-left:600px ;
+        margin-bottom: 100px;
+       }
+       .pure{
+        margin-top: 150px;
+       }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <button class="pure">Horoctn</button>
+        <!-- <div class="hd"><button>submit check</button></div> -->
+    </div>
+    <div class="">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li style="float: right;"><a class="last" href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div class="page">
+        <div class="container">
+            <div class="img1">
+            <p class="disr">What's Up Bro</p>
+            <p class="les les1"> < </p>
+            <!-- <p class="les les2"> > </p> -->
+            </div>
+            <div class="title"> Technical subjects </div>
+
+        </div>
+        <div class="second">
+            <div class="img img2">
+                <p class=" ans ">C++</p>
+            </div>
+            <div class="img img3">
+                <p class="ans ">DBMS</p>
+            </div>
+            <div class="img img4">
+                <P class="ans ">CHRM</P>
+            </div>
+            <div class="img img5">
+                <P class="ans ">DDMP</P>
+            </div>
+        </div>
+            <div class="title2"> Some General subjects</div>
+        <div class="third">
+            <div class=" card img6">
+                <p class="ans1">English</p>
+            </div>
+            <div class="card img7">
+                <p class="ans1">Nepali</p>
+            </div>
+            <div class="card img8">               
+                 <p class="ans1">Math</p>
+            </div>
+            <div class="card img9">
+                <p class="ans1">Science</p>
+            </div>
+        </div>
+            <div class="net">
+                <p>IT courses</p>
+            </div>
+        <div class="fourth">
+            <div class="circle img10">
+                <p class="btn">Computer Science Fundamentals</p>
+            </div>
+            <div class="circle img11">
+                <p class="btn">Cybersecurity and Information Assurance Management</p>
+            </div>
+            <div class="circle img12">
+                <p class="btn">Applied Data Science and Machine Learning with Python</p>
+            </div>
+        </div>
+
+        <div class="fifth">
+            <div class="circle2 img13">
+                <p class="btn">Advanced Information Systems Security and Risk Management</p>
+
+            </div>
+            <div class="circle2 img14">
+                <p class="btn">
+                    Artificial Intelligence and Machine Learning for Business Strategy and Decision Making</p>
+            </div>
+            <div class="circle2 img15">               
+                 <p class="btn">Machine Learning and Artificial Intelligence</p>     
+            </div>
+        </div>
+        <div class="explain">
+         <p>Explanation</p>
+        </div>
+        <div class="sixth">
+            <div class="rec img16">
+                <p class="btn">This course provides an in-depth understanding of blockchain technology, cryptocurrencies, 
+                    smart contracts, and their applications in various industries.</p>
+            </div>
+            <div class="rec img17">
+                <p class="btn">Courses on developing apps for iOS (using Swift) and Android (using Java or Kotlin).</p>
+            </div>
+            <div class="rec img18">
+                <p class="btn">Courses are available for popular programming languages like Python, Java, C++, JavaScript, and many others.</p>
+            </div>
+            <div class="rec img19">
+                <p class="btn">This course focuses on managing cybersecurity risks and ensuring the confidentiality, 
+                    integrity, and availability of information systems and data.</p>
+            </div>
+        </div>
+        <div class="next"></div>
+
+        <div class="hr">
+            <p>HOROCTN</p>
+        </div>
+        <div class="seventh">
+            <div class="rec2 img20">
+                <p   class="value">greater value</p>
+                <p class="value2">OnlineKhabar keeps updating political</p>  
+            </div>
+
+            <div class="rec3 img21">           
+                 <p class="value">lesser value</p>
+                 <p class="value2">OnlineKhabar keeps updating political</p>
+            </div>
+           
+        </div>
+
+    </div>
+
+    <div class="end">
+        <p class="clb">Horo</p>
+        <div class="bac">
+            <p class="v"></p>
+            <div class="eight">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
